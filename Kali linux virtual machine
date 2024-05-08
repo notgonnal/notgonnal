@@ -1,0 +1,35 @@
+IN BASH
+
+
+#!/bin/bash
+
+# Define the name of your Kali Linux virtual machine
+VM_NAME="Your_VM_Name"
+
+# Check if the virtual machine is already running
+if VBoxManage list runningvms | grep -q "$VM_NAME"; then
+    echo "The virtual machine is already running."
+else
+    # Start the virtual machine
+    VBoxManage startvm "$VM_NAME" --type headless
+    echo "Starting the virtual machine..."
+fi
+
+
+chmod +x start_kali.sh
+
+
+
+TO EXECUTE:
+./start_kali.sh
+
+
+
+I REMIND YOU THAT THIS IS IN TERMINAL!!!
+
+
+
+
+
+
+KALI LINUX https://www.kali.org
